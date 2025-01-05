@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TEK-UP Esports Tournament Webpage
 
 Welcome to the official repository for the **TEK-UP Esports Tournament** webpage! This project showcases the landing page for TEK-UP's thrilling esports events, featuring games, rewards, and community connections.
@@ -21,3 +22,7 @@ Welcome to the official repository for the **TEK-UP Esports Tournament** webpage
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/esports-university-events.git
+=======
+# Tek-Up-Esports
+A wbepage For Tek-Up Esports Events
+>>>>>>> e0aa958be650d952d09d48c2cfafd3f44339a0d7
