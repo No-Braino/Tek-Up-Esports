@@ -697,6 +697,67 @@ header nav ul li a:hover {
   padding: 10px;
   font-family: 'Roboto', sans-serif;
 }
+/* Championship Section */
+#championship {
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.championship-content {
+  margin-bottom: 30px;
+}
+
+.championship-content h2 {
+  font-size: 2.5rem;
+  color: #ff9900;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.championship-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.championship-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tournament Details */
+.tournament-details {
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 800px;
+  color: #ddd;
+  text-align: left;
+}
+
+.tournament-details h3 {
+  font-size: 1.8rem;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+.tournament-details p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.tournament-details ul,
+.tournament-details ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.tournament-details li {
+  margin-bottom: 10px;
+}
 
 
 /* ===================== Footer ===================== */
