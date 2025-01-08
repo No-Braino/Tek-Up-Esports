@@ -1,4 +1,7 @@
-/* ===================== Global Styles ===================== */
+/***************************************************************
+  GLOBAL STYLES 
+  - Base styling for body, links, images, and reusable icon sizes
+***************************************************************/
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -11,6 +14,7 @@ body {
 a {
   color: #fdca10;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 a:hover {
@@ -23,7 +27,6 @@ img {
   height: auto;
 }
 
-/* ===================== Icon Classes ===================== */
 .icon {
   width: 48px;
   margin-bottom: 0.5rem;
@@ -33,15 +36,18 @@ img {
   width: 16px;
   height: auto;
   display: inline-block;
-  margin: 0;
 }
 
+/* Larger game icon, used in specific sections */
 .game-icon {
   width: 80px;
   margin: 0 auto 1rem;
 }
 
-/* ===================== Header ===================== */
+/***************************************************************
+  HEADER 
+  - Sticky header with navigation and logo
+***************************************************************/
 header {
   display: flex;
   justify-content: space-between;
@@ -58,6 +64,7 @@ header .logo img {
   height: 75px;
 }
 
+/* Navigation List */
 header nav {
   flex: 1;
   text-align: center;
@@ -80,13 +87,13 @@ header nav ul li a {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
   color: #fdca10;
 }
 
+/* Common call-to-action (button) style used in nav or elsewhere */
 .cta {
   background: #fdca10;
   color: #000;
@@ -95,15 +102,18 @@ header nav ul li a:hover {
   border-radius: 3px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .cta:hover {
   background: #e6b800;
 }
 
-/* ===================== Hero Section ===================== */
+/***************************************************************
+  HERO SECTION 
+  - Large banner image with overlay text and calls to action
+***************************************************************/
 .hero {
   position: relative;
   padding: 5rem 2rem;
@@ -116,11 +126,12 @@ header nav ul li a:hover {
 }
 
 .hero::before {
+  /* Dark overlay on top of the hero image */
   content: "";
   position: absolute;
-  top: 0;
+  top: 0; 
   left: 0;
-  width: 100%;
+  width: 100%; 
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
@@ -128,7 +139,7 @@ header nav ul li a:hover {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 2; 
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
@@ -152,17 +163,21 @@ header nav ul li a:hover {
   margin-right: 1rem;
 }
 
-/* ===================== Button Styles ===================== */
-.btn-primary,
-.btn-secondary {
+/***************************************************************
+  BUTTON STYLES 
+  - Reusable primary and secondary button variants
+***************************************************************/
+.btn-primary, .btn-secondary {
   padding: 0.8rem 2rem;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
   text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block; /* So margin and size work properly */
 }
 
+/* Primary button is filled */
 .btn-primary {
   background: #fdca10;
   color: #000;
@@ -173,6 +188,7 @@ header nav ul li a:hover {
   background: #e6b800;
 }
 
+/* Secondary button is outlined */
 .btn-secondary {
   background: transparent;
   color: #fdca10;
@@ -184,7 +200,10 @@ header nav ul li a:hover {
   color: #000;
 }
 
-/* ===================== About Section ===================== */
+/***************************************************************
+  ABOUT SECTION
+  - Intro about the website/games with features (cards)
+***************************************************************/
 .about {
   padding: 4rem 2rem;
   background: #111;
@@ -204,6 +223,7 @@ header nav ul li a:hover {
   color: #ccc;
 }
 
+/* Features grid */
 .about-features {
   display: flex;
   justify-content: center;
@@ -216,8 +236,8 @@ header nav ul li a:hover {
   padding: 2rem;
   border-radius: 10px;
   width: 250px;
-  transition: transform 0.3s ease, background 0.3s ease;
   text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .feature:hover {
@@ -226,7 +246,6 @@ header nav ul li a:hover {
 }
 
 .feature .icon {
-  display: block;
   margin: 0 auto 1rem;
 }
 
@@ -241,7 +260,10 @@ header nav ul li a:hover {
   color: #ccc;
 }
 
-/* ===================== Games Section ===================== */
+/***************************************************************
+  GAMES SECTION 
+  - Showcase game cards
+***************************************************************/
 .games {
   padding: 4rem 2rem;
   background: #000;
@@ -268,8 +290,8 @@ header nav ul li a:hover {
   border-radius: 10px;
   width: 200px;
   box-shadow: 0 4px 8px rgba(253, 202, 16, 0.5);
-  transition: transform 0.3s ease, background 0.3s ease;
   text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .game-card:hover {
@@ -282,7 +304,10 @@ header nav ul li a:hover {
   margin-top: 1rem;
 }
 
-/* ===================== Game Pages ===================== */
+/***************************************************************
+  GAME DETAILS PAGE 
+  - Banner, details section, audio player
+***************************************************************/
 /* Game Banner */
 .banner {
   display: flex;
@@ -299,7 +324,7 @@ header nav ul li a:hover {
   height: auto;
 }
 
-/* Game Details */
+/* Game Details Content Box */
 .game-details {
   padding: 2.5rem;
   background: #111;
@@ -332,9 +357,7 @@ header nav ul li a:hover {
 
 .game-details a {
   color: #fdca10;
-  text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .game-details a:hover {
@@ -342,13 +365,12 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Audio Player Container */
+/* "Feel It" Audio Button and Player */
 .game-details .audio-player-container {
   margin-top: 1.5rem;
   text-align: center;
 }
 
-/* Feel It Button */
 .game-details .audio-btn {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -360,7 +382,6 @@ header nav ul li a:hover {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
-  text-align: center;
 }
 
 .game-details .audio-btn:hover {
@@ -368,7 +389,7 @@ header nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Audio Player */
+/* The hidden audio player box that appears once toggled */
 .game-details .audio-player {
   text-align: center;
   padding: 1.5rem;
@@ -378,15 +399,18 @@ header nav ul li a:hover {
   max-width: 600px;
   margin: 1rem auto;
   border: 2px solid #fdca10;
-  display: none;
+  display: none; /* Hidden by default */
 }
 
-/* Show Audio Player when Checkbox is Checked */
+/* Show audio player when the checkbox is checked */
 .game-details .audio-toggle:checked + .audio-btn + .audio-player {
   display: block;
 }
 
-/* ===================== Rewards Section ===================== */
+/***************************************************************
+  REWARDS SECTION 
+  - Prize cards
+***************************************************************/
 .rewards {
   padding: 4rem 2rem;
   background: #111;
@@ -431,7 +455,10 @@ header nav ul li a:hover {
   color: #fff;
 }
 
-/* ===================== Contact Section ===================== */
+/***************************************************************
+  CONTACT SECTION 
+  - Simple contact form
+***************************************************************/
 .contact {
   padding: 4rem 2rem;
   background: #000;
@@ -444,6 +471,7 @@ header nav ul li a:hover {
   color: #fdca10;
 }
 
+/* Contact form styles */
 .contact form {
   max-width: 600px;
   margin: 0 auto;
@@ -482,7 +510,10 @@ header nav ul li a:hover {
   align-self: center;
 }
 
-/* ===================== Register Page ===================== */
+/***************************************************************
+  REGISTER PAGE 
+  - Registration form styling
+***************************************************************/
 .register {
   padding: 4rem 2rem;
   background: #000;
@@ -528,7 +559,10 @@ header nav ul li a:hover {
   align-self: center;
 }
 
-/* ===================== FAQ Section ===================== */
+/***************************************************************
+  FAQ SECTION 
+  - Simple Q&A
+***************************************************************/
 .faq {
   padding: 4rem 2rem;
   background: #111;
@@ -551,7 +585,10 @@ header nav ul li a:hover {
   font-size: 1.2rem;
 }
 
-/* ===================== Partners Page ===================== */
+/***************************************************************
+  PARTNERS PAGE 
+  - Grid layout for partner logos and links
+***************************************************************/
 .partners {
   padding: 4rem 2rem;
   background: #111;
@@ -611,7 +648,6 @@ header nav ul li a:hover {
 
 .partner a {
   color: #fdca10;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -619,9 +655,10 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ===================== Sneek Peek Page ===================== */
-
-/* Hype Section with Video Banner */
+/***************************************************************
+  SNEAK PEEK PAGE (HYPE SECTION)
+  - Video banner and gallery of featured videos
+***************************************************************/
 #hype {
   position: relative;
   height: 60vh;
@@ -629,15 +666,17 @@ header nav ul li a:hover {
 }
 
 .video-banner {
+  /* Full-screen video background */
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; 
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1; /* Goes behind overlay text */
 }
 
+/* Overlay text on top of the video */
 .banner-content {
   position: absolute;
   top: 50%;
@@ -659,8 +698,7 @@ header nav ul li a:hover {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-
-/* Featured Videos Section */
+/* Featured Videos */
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -672,7 +710,6 @@ header nav ul li a:hover {
 .video-card {
   background-color: #252525;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   text-align: center;
   width: 100%;
@@ -695,11 +732,13 @@ header nav ul li a:hover {
   color: #ddd;
   font-size: 1rem;
   padding: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-
-/* ===================== Footer ===================== */
+/***************************************************************
+  FOOTER 
+  - Simple, centered footer
+***************************************************************/
 footer {
   background: #000;
   padding: 2rem;
@@ -715,15 +754,18 @@ footer {
 .footer-content a {
   margin: 0 0.5rem;
   color: #fff;
-  transition: color 0.3s ease;
 }
 
 .footer-content a:hover {
   color: #fdca10;
 }
 
-/* ===================== Responsive Design ===================== */
+/***************************************************************
+  RESPONSIVE DESIGN 
+  - Adjust layouts for smaller screens
+***************************************************************/
 @media (max-width: 768px) {
+  /* Stack header items */
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -744,12 +786,12 @@ footer {
   }
 
   .cta {
-    align-self: stretch;
     width: 100%;
     text-align: center;
     margin-top: 0.5rem;
   }
 
+  /* Hero section: reduce height, adjust text sizes */
   .hero {
     padding: 2rem 1rem;
     height: auto;
@@ -763,6 +805,7 @@ footer {
     font-size: 1rem;
   }
 
+  /* Make feature/game/prize cards stack vertically */
   .about-features,
   .game-list,
   .prizes {
@@ -776,20 +819,13 @@ footer {
     width: 80%;
   }
 
+  /* Contact & register forms: narrower layout */
   .contact form,
   .register form {
     width: 90%;
   }
 
-  .partner-carousel {
-    width: 95%;
-  }
-  .arrow-btn.left {
-    left: 0;
-  }
-  .arrow-btn.right {
-    right: 0;
-  }
+  /* Game details margin/padding adjustments */
   .banner {
     max-width: 100%;
     margin: 1rem auto;
