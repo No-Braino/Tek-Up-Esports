@@ -1,6 +1,6 @@
 /* ===================== Global Styles ===================== */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   background: #000;
@@ -31,9 +31,9 @@ img {
 
 .icon-social {
   width: 16px;
-  height: auto; 
+  height: auto;
   display: inline-block;
-  margin: 0; 
+  margin: 0;
 }
 
 .game-icon {
@@ -107,7 +107,7 @@ header nav ul li a:hover {
 .hero {
   position: relative;
   padding: 5rem 2rem;
-  background: url("../media/images/Heroimg.png") no-repeat center center;
+  background: url("../media/images/heroimg.png") no-repeat center center;
   background-size: cover;
   height: 60vh;
   display: flex;
@@ -118,9 +118,9 @@ header nav ul li a:hover {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
@@ -280,6 +280,110 @@ header nav ul li a:hover {
 .game-card h3 {
   font-size: 1.2rem;
   margin-top: 1rem;
+}
+
+/* ===================== Game Pages ===================== */
+/* Game Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Game Details */
+.game-details {
+  padding: 2.5rem;
+  background: #111;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  margin: 0 auto 3rem;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.game-details h2 {
+  color: #fdca10;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #fdca10;
+  padding-bottom: 0.5rem;
+}
+
+.game-details p,
+.game-details ul {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.game-details ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.game-details a {
+  color: #fdca10;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.game-details a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Audio Player Container */
+.game-details .audio-player-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Feel It Button */
+.game-details .audio-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: #000;
+  background: #fdca10;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.game-details .audio-btn:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Audio Player */
+.game-details .audio-player {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin: 1rem auto;
+  border: 2px solid #fdca10;
+  display: none;
+}
+
+/* Show Audio Player when Checkbox is Checked */
+.game-details .audio-toggle:checked + .audio-btn + .audio-player {
+  display: block;
 }
 
 /* ===================== Rewards Section ===================== */
@@ -515,9 +619,6 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-
-
-
 /* ===================== Footer ===================== */
 footer {
   background: #000;
@@ -608,5 +709,23 @@ footer {
   }
   .arrow-btn.right {
     right: 0;
+  }
+  .banner {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .game-details {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .game-details .audio-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .game-details .audio-player {
+    max-width: 90%;
   }
 }
