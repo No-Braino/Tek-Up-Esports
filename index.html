@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TEK-UP Esports Tournament</title>
-
-  <!-- Google Fonts Imported -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header Section -->
   <header>
     <div class="logo">
-      <img src="media/images/TEKUP.png" alt="TEK-UP Esports" height="75">
+      <img 
+        src="media/images/TEKUP.png" 
+        alt="TEK-UP Esports Logo" 
+        height="75"
+      />
     </div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#rewards">Rewards</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="index.html#rewards">Rewards</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="partners.html">Partners</a></li>
       </ul>
     </nav>
-    <button class="cta">Register Now</button>
+    <a href="register.html" class="cta">Register Now</a>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-text">
-        <h2>Welcome to the "Level Up" Tournament</h2>
+        <h1>Welcome to the "Level Up" Tournament</h1>
         <p>Compete with the best gamers in TEK-UP for fame and fortune.</p>
         <div class="buttons">
           <a href="#about" class="btn-primary">Learn More</a>
-          <a href="#contact" class="btn-secondary">Sign Up</a>
+          <a href="register.html" class="btn-secondary">Sign Up</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
   <section class="about" id="about">
     <h2>About the Tournament</h2>
-    <p>Level Up Tournament is the premier esports event bringing together top gamers for thrilling competition and incredible prizes.</p>
+    <p>
+      Level Up Tournament is the premier esports event bringing together 
+      top gamers for thrilling competition and incredible prizes.
+    </p>
     <div class="about-features">
       <div class="feature">
-        <i class="fas fa-trophy"></i>
+        <img 
+          src="icons/trophy.png" 
+          alt="Trophy Icon" 
+          class="icon"
+        />
         <h3>Top Prizes</h3>
         <p>Win amazing cash prizes and exclusive merchandise.</p>
       </div>
       <div class="feature">
-        <i class="fas fa-gamepad"></i>
+        <img 
+          src="icons/gamepad.png" 
+          alt="Gamepad Icon"
+          class="icon"
+        />
         <h3>Multiple Games</h3>
         <p>Participate in your favorite games and showcase your skills.</p>
       </div>
       <div class="feature">
-        <i class="fas fa-users"></i>
+        <img 
+          src="icons/users.png" 
+          alt="Community Icon"
+          class="icon"
+        />
         <h3>Community</h3>
         <p>Join a vibrant community of passionate gamers.</p>
       </div>
     </div>
   </section>
 
-  <!-- Games Section -->
   <section class="games" id="games">
     <h2>Games</h2>
     <div class="game-list">
       <div class="game-card">
-        <i class="fab fa-fort-awesome"></i>
-        <h3>Fortnite</h3>
-      </div>
-      <div class="game-card">
-        <i class="fas fa-dragon"></i>
-        <h3>League of Legends</h3>
-      </div>
-      <div class="game-card">
-        <i class="fas fa-crosshairs"></i>
+        <img 
+          src="icons/valorant.png" 
+          alt="Valorant Logo" 
+          class="game-icon"
+        />
         <h3>Valorant</h3>
       </div>
       <div class="game-card">
-        <i class="fas fa-shield-alt"></i>
-        <h3>CS:GO</h3>
+        <img 
+          src="icons/cs2.png" 
+          alt="CS2 Logo" 
+          class="game-icon"
+        />
+        <h3>CS2</h3>
+      </div>
+      <div class="game-card">
+        <img 
+          src="icons/lol.png" 
+          alt="League of Legends Logo" 
+          class="game-icon"
+        />
+        <h3>League of Legends</h3>
+      </div>
+      <div class="game-card">
+        <img 
+          src="icons/fc25.png" 
+          alt="FC 25 Logo" 
+          class="game-icon"
+        />
+        <h3>EA Sports FC 25</h3>
       </div>
     </div>
   </section>
 
-  <!-- Rewards Section -->
   <section class="rewards" id="rewards">
     <h2>Prizes</h2>
     <div class="prizes">
@@ -110,25 +138,64 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <form action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <label for="contact-name">Name</label>
+      <input 
+        type="text" 
+        id="contact-name" 
+        name="name" 
+        placeholder="Your Name" 
+        required
+      />
+      <label for="contact-email">Email</label>
+      <input 
+        type="email" 
+        id="contact-email" 
+        name="email" 
+        placeholder="Your Email" 
+        required
+      />
+      <label for="message">Message</label>
+      <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        placeholder="Your Message" 
+        required
+      ></textarea>
       <button type="submit" class="btn-primary">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>Contact us at <a href="mailto:contact@esports.com">contact@esports.com</a></p>
+      <p>Contact us at 
+        <a href="mailto:contact@esports.com">contact@esports.com</a>
+      </p>
       <p>Follow us on:
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#">
+          <img 
+            src="icons/facebook.png" 
+            alt="Facebook" 
+            class="icon-social"
+          />
+        </a>
+        <a href="#">
+          <img 
+            src="icons/twitter.png" 
+            alt="Twitter" 
+            class="icon-social"
+          />
+        </a>
+        <a href="#">
+          <img 
+            src="icons/instagram.png" 
+            alt="Instagram" 
+            class="icon-social"
+          />
+        </a>
       </p>
       <p>© 2025 TEK-UP Esports Tournament. All rights reserved.</p>
     </div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | TEK-UP Esports</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img 
+        src="media/images/TEKUP.png" 
+        alt="TEK-UP Esports Logo" 
+        height="75"
+      />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="index.html#rewards">Rewards</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="cta">Register Now</a>
+  </header>
+
+  <section class="register">
+    <h2>Register for the Tournament</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Your Name" 
+        required
+      />
+      <label for="email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Your Email" 
+        required
+      />
+      <label for="phone">Phone</label>
+      <input 
+        type="text" 
+        id="phone" 
+        name="phone" 
+        placeholder="Your Phone Number" 
+        required
+      />
+      <label for="game">Choose Your Game</label>
+      <select id="game" name="game" required>
+        <option value="" disabled selected>Select a game</option>
+        <option value="valorant">Valorant</option>
+        <option value="cs2">CS2</option>
+        <option value="lol">League of Legends</option>
+        <option value="fc25">EA Sports FC 25</option>
+      </select>
+      <label for="in_game_name">In-Game Name</label>
+      <input 
+        type="text" 
+        id="in_game_name" 
+        name="in_game_name" 
+        placeholder="Your in-game name"
+      />
+      <label for="team_name">Team Name (optional)</label>
+      <input 
+        type="text" 
+        id="team_name" 
+        name="team_name" 
+        placeholder="Your team name"
+      />
+      <label for="elo">Elo (optional)</label>
+      <input 
+        type="number" 
+        id="elo" 
+        name="elo" 
+        placeholder="Your Elo rating"
+      />
+      <label for="rank">Rank (optional)</label>
+      <input 
+        type="text" 
+        id="rank" 
+        name="rank" 
+        placeholder="Your rank"
+      />
+      <button type="submit" class="btn-primary">Submit Registration</button>
+    </form>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Who can participate in the tournament?</h3>
+      <p>
+        Any student or gaming enthusiast affiliated with TEK-UP can join. 
+        Just register and wait for our confirmation!
+      </p>
+    </div>
+    <div class="faq-item">
+      <h3>How many players can be in a team?</h3>
+      <p>
+        Team sizes vary by game. For example, League of Legends and Valorant
+        are typically 5v5, while CS2 can be 5v5 as well.
+      </p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a registration fee?</h3>
+      <p>No. Participation is free, but spots may be limited.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Where will the matches be streamed?</h3>
+      <p>
+        We’ll have a live stream on our official Twitch channel and campus screens.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        Questions? 
+        <a href="index.html#contact">Contact us here</a>
+      </p>
+      <p>© 2025 TEK-UP Esports Tournament</p>
+    </div>
+  </footer>
+</body>
+</html>
