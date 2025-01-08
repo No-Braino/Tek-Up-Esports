@@ -30,9 +30,10 @@ img {
 }
 
 .icon-social {
-  width: 32px;
-  margin: 0 8px;
-  vertical-align: middle;
+  width: 16px;
+  height: auto; 
+  display: inline-block;
+  margin: 0; 
 }
 
 .game-icon {
