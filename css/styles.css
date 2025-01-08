@@ -30,9 +30,10 @@ img {
 }
 
 .icon-social {
-  width: 32px;
-  margin: 0 8px;
-  vertical-align: middle;
+  width: 16px;
+  height: auto; 
+  display: inline-block;
+  margin: 0; 
 }
 
 .game-icon {
@@ -461,36 +462,23 @@ header nav ul li a:hover {
 
 .partners p {
   max-width: 800px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   color: #ccc;
 }
 
-.partner-carousel {
-  position: relative;
-  width: 80%;
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
-  overflow: hidden;
-}
-
-.partner-track {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 1rem;
-}
-
-.partner-track::-webkit-scrollbar {
-  display: none;
 }
 
 .partner {
-  min-width: 220px;
   background: #222;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   text-align: center;
-  flex: 0 0 auto;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -501,37 +489,34 @@ header nav ul li a:hover {
 
 .partner-logo {
   width: 100px;
+  height: auto;
   margin: 0 auto 1rem;
 }
 
-.arrow-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #fdca10;
-  color: #000;
-  border: none;
-  border-radius: 50%;
+.partner h3 {
   font-size: 1.5rem;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-  z-index: 10;
+  margin-bottom: 0.5rem;
+  color: #fdca10;
 }
 
-.arrow-btn:hover {
-  opacity: 1;
+.partner p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.arrow-btn.left {
-  left: -2rem;
+.partner a {
+  color: #fdca10;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.arrow-btn.right {
-  right: -2rem;
+.partner a:hover {
+  text-decoration: underline;
 }
+
+
+
 
 /* ===================== Footer ===================== */
 footer {
